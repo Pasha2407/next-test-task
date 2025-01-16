@@ -1,0 +1,28 @@
+.CardList {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 12px;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    background-color: rgb(70, 70, 70);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 4px solid rgb(130, 130, 130);
+    width: 120px;
+    height: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s ease
+}
+
+.Card:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+.active {
+    border-left: 4px solid rgb(0, 200, 0);
+}

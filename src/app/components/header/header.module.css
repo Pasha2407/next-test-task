@@ -1,0 +1,18 @@
+.Links {
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    padding-left: 50px;
+}
+
+.Links>a {
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+
+.active {
+    border-bottom: 2px solid white;
+}
