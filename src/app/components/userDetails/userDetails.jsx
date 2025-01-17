@@ -1,21 +1,8 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
-
 import css from "./userDetails.module.css";
 import { fetchUserDetails } from "@/lib/api";
 
-export function UserDetails() {
-  const [user, setUser] = useState(null);
-  const searchParams = useSearchParams();
-  const id = searchParams.get("id");
-
-  useEffect(() => {
-    if (id) {
-      fetchUserDetails(id).then(setUser);
-    }
-  }, [id]);
+export async function UserDetails({ id }) {
+  const user = await fetchUserDetails(id);
 
   return (
     user && (
