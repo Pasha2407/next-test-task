@@ -1,0 +1,11 @@
+.PostsList {
+    padding: 20px 40px;
+}
+
+.PostsList li {
+    margin-bottom: 14px;
+    background-color: rgb(70, 70, 70);
+    border-radius: 20px;
+    padding: 8px 12px;
+    list-style: none;
+}

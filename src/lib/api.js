@@ -8,3 +8,8 @@ export async function fetchUserDetails(id) {
     const res = await fetch(`https://jsonplaceholder.org/users/${id}`);
     return res.json();
 }
+
+export async function fetchPostsList() {
+    const res = await fetch("https://jsonplaceholder.org/comments");
+    return res.json();
+}
